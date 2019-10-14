@@ -1,5 +1,5 @@
 'use strict';
-const isDefined = value => value !== undefined;
+const isDefined = value => typeof(value) !== "undefined";
 
 module.exports = ({month, year} = {}) => {
 	if (isDefined(month) && typeof month !== 'number') {
